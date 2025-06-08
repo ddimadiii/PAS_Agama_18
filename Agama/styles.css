@@ -9,6 +9,11 @@
   font-weight: 700;
   font-style: normal;
 }
+img{
+  height: 500px ;
+  width: 500px;
+  border-radius: 15%;
+}
 
 body {
   background-image: url("asset/img/Masjid-Agung-Darussalam-KTC-Taliwang-819x1024.jpg");
@@ -136,10 +141,9 @@ footer {
     font-size: 1rem;
   }
 }
-
 @media (max-width: 480px) {
   header {
-    padding: 10px;
+    padding: 12px 10px; /* dikit lebih nyaman */
   }
 
   header h1 {
@@ -149,29 +153,37 @@ footer {
   nav ul {
     flex-direction: column;
     overflow-y: auto;
-    max-height: 10vh;
+    max-height: 12vh; /* dikit lebih lega untuk scroll */
+    -webkit-overflow-scrolling: touch; /* smooth scrolling di Android */
   }
 
   nav ul li a {
-    font-size: 0.75rem;
-    padding: 8px 15px;
+    font-size: 0.8rem; /* sedikit lebih besar supaya nyaman disentuh */
+    padding: 10px 16px; /* padding sedikit diperbesar untuk sentuhan */
     border-radius: 15px;
   }
-
+img{
+  
+  height: 200px ;
+  width: 200px;
+  border-radius: 15%;
+}
   article {
-    padding: 15px;
+    padding: 16px; /* sedikit lebih lega */
   }
 
   article h2 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   article p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.6;
   }
 
   footer {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    height: auto; /* supaya footer tidak terlalu tinggi di ponsel */
+    padding: 15px 20px;
   }
 }
